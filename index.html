@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fast Car Racers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style-2025.css" />
+</head>
+<body>
+  <header role="banner">
+    <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+      <div class="navbar-logo">Fast Car Racers</div>
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li class="dropdown">
+          <a href="racers.html">Racers</a>
+          <ul class="dropdown-menu">
+            <li><strong>Filter by Gender</strong></li>
+            <li><a href="racers.html?gender=male">Male</a></li>
+            <li><a href="racers.html?gender=female">Female</a></li>
+            <li><a href="racers.html?gender=all">All</a></li>
+            <li><strong>Filter by Race</strong></li>
+            <li><a href="racers.html?race=American">American</a></li>
+            <li><a href="racers.html?race=Asian">Asian</a></li>
+            <li><a href="racers.html?race=Other">Other</a></li>
+            <li><a href="racers.html">Clear Filters</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="top-cars.html">Top Cars</a>
+          <ul class="dropdown-menu">
+            <li><strong>Filter by Type</strong></li>
+            <li><a href="top-cars.html?type=turbocharged">Turbocharged</a></li>
+            <li><a href="top-cars.html?type=drifting">Drifting</a></li>
+            <li><a href="top-cars.html?type=nitro">Nitro</a></li>
+            <li><a href="top-cars.html">Clear Filters</a></li>
+          </ul>
+        </li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="carousel-container" aria-label="Featured Images Carousel">
+      <div class="carousel-slide fade" style="background-image: url('ford\ mustang.avif');" role="img" aria-label="Street racing car 1"></div>
+      <div class="carousel-slide fade" style="background-image: url('ferrari.avif');" role="img" aria-label="Street racing car 2"></div>
+      <div class="carousel-slide fade" style="background-image: url('McLaren-720S.jpg');" role="img" aria-label="Street racing car 3"></div>
+      <div class="carousel-gradient"></div>
+      <div class="carousel-text">
+        <h1>The Dreams of a Street Racer</h1>
+      </div>
+    </section>
+
+    <section class="featured-racers" aria-labelledby="featured-racers-title">
+      <h2 id="featured-racers-title">Featured Top Racer</h2>
+      <div class="racers-grid">
+        <article class="racer-card" role="group" aria-label="Racer John Speed">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Speed" />
+          <h3>John Speed</h3>
+          <p>Rating: 4.9</p>
+          <p>Car: Nissan GT-R</p>
+        </article>
+        <article class="racer-card" role="group" aria-label="Racer Lisa Drift">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lisa Drift" />
+          <h3>Lisa Drift</h3>
+          <p>Rating: 4.8</p>
+          <p>Car: Toyota Supra</p>
+        </article>
+        <article class="racer-card" role="group" aria-label="Racer Mike Turbo">
+          <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Mike Turbo" />
+          <h3>Mike Turbo</h3>
+          <p>Rating: 4.7</p>
+          <p>Car: Chevrolet Camaro</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="upcoming-events" aria-labelledby="upcoming-events-title">
+      <h2 id="upcoming-events-title">Upcoming Race Events</h2>
+      <div class="events-grid">
+        <article class="event-card" role="group" aria-label="Event Street Thunder">
+          <img src="events/street.jpg" alt="Street Thunder" />
+          <h3>Street Thunder</h3>
+          <p>Joiners: 25</p>
+        </article>
+        <article class="event-card" role="group" aria-label="Event Night Drift">
+          <img src="events/night drift.avif" alt="Night Drift" />
+          <h3>Night Drift</h3>
+          <p>Joiners: 18</p>
+        </article>
+        <article class="event-card" role="group" aria-label="Event Speed Fest">
+          <img src="events/speed fest.avif" alt="Speed Fest" />
+          <h3>Speed Fest</h3>
+          <p>Joiners: 30</p>
+        </article>
+        <article class="event-card" role="group" aria-label="Event Turbo Challenge">
+          <img src="events/turbo.jpg" alt="Turbo Challenge" />
+          <h3>Turbo Challenge</h3>
+          <p>Joiners: 22</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <h2>Fast Car Racers</h2>
+        <p>Speed, Passion, and Performance</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="racers.html">Racers</a></li>
+          <li><a href="top-cars.html">Top Cars</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" class="social-icon facebook" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123V24h6.116C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="social-icon twitter" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 00-8.38 4.482A13.94 13.94 0 011.671 3.149a4.916 4.916 0 001.523 6.574 4.897 4.897 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.59 3.417A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.209c9.056 0 14.01-7.513 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon youtube" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M23.498 6.186a2.998 2.998 0 00-2.11-2.11C19.67 3.5 12 3.5 12 3.5s-7.67 0-9.388.576a2.998 2.998 0 00-2.11 2.11C.5 7.904.5 12 .5 12s0 4.096.002 5.814a2.998 2.998 0 002.11 2.11C4.33 20.5 12 20.5 12 20.5s7.67 0 9.388-.576a2.998 2.998 0 002.11-2.11c.002-1.718.002-5.814.002-5.814s0-4.096-.002-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <p>Contact us: <a href="mailto:info@fastcarracers.com">info@fastcarracers.com</a></p>
+        <p>&copy;Developed by Ewetse Ndala</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

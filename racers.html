@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Racers - Fast Car Racers</title>
+  <link rel="stylesheet" href="css/style-2025.css" />
+</head>
+<body>
+    <nav class="navbar">
+      <div class="navbar-logo">Fast Car Racers</div>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="racers.html" class="active">Racers</a>
+          <ul class="dropdown-menu">
+            <li><strong>Filter by Gender</strong></li>
+            <li><a href="racers.html?gender=male">Male</a></li>
+            <li><a href="racers.html?gender=female">Female</a></li>
+            <li><a href="racers.html?gender=all">All</a></li>
+            <li><strong>Filter by Race</strong></li>
+            <li><a href="racers.html?race=American">American</a></li>
+            <li><a href="racers.html?race=Asian">Asian</a></li>
+            <li><a href="racers.html?race=Other">Other</a></li>
+            <li><a href="racers.html">Clear Filters</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="top-cars.html">Top Cars</a>
+          <ul class="dropdown-menu">
+            <li><strong>Filter by Type</strong></li>
+            <li><a href="top-cars.html?type=turbocharged">Turbocharged</a></li>
+            <li><a href="top-cars.html?type=drifting">Drifting</a></li>
+            <li><a href="top-cars.html?type=nitro">Nitro</a></li>
+            <li><a href="top-cars.html">Clear Filters</a></li>
+          </ul>
+        </li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  <main class="racers-page">
+    <h1>Racers</h1>
+    <div class="filters">
+      <label for="gender-filter">Gender:</label>
+      <select id="gender-filter">
+        <option value="all">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="race-filter">Race:</label>
+      <select id="race-filter">
+        <option value="all">All</option>
+        <option value="American">American</option>
+        <option value="Asian">Asian</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="racers-list grid-even">
+      <div class="racer-card" data-name="John Speed" data-rating="4.9" data-car="Nissan GT-R" data-birth="1990-05-15" data-bio="John Speed is a legendary street racer known for his precision and speed on the streets." data-gender="male" data-race="American">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Speed" />
+        <h3>John Speed</h3>
+        <p>Rating: 4.9</p>
+        <p>Car: Nissan GT-R</p>
+      </div>
+      <div class="racer-card" data-name="Lisa Drift" data-rating="4.8" data-car="Toyota Supra" data-birth="1992-08-22" data-bio="Lisa Drift is a master of drifting techniques and has won numerous competitions worldwide." data-gender="female" data-race="Asian">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Lisa Drift" />
+        <h3>Lisa Drift</h3>
+        <p>Rating: 4.8</p>
+        <p>Car: Toyota Supra</p>
+      </div>
+      <div class="racer-card" data-name="Mike Turbo" data-rating="4.7" data-car="Chevrolet Camaro" data-birth="1988-11-03" data-bio="Mike Turbo is known for his aggressive racing style and powerful cars." data-gender="male" data-race="American">
+        <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Mike Turbo" />
+        <h3>Mike Turbo</h3>
+        <p>Rating: 4.7</p>
+        <p>Car: Chevrolet Camaro</p>
+      </div>
+      <div class="racer-card" data-name="Anna Speedster" data-rating="4.6" data-car="Ford Mustang" data-birth="1991-07-12" data-bio="Anna Speedster is a rising star in the racing world with impressive skills.">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anna Speedster" />
+        <h3>Anna Speedster</h3>
+        <p>Rating: 4.6</p>
+        <p>Car: Ford Mustang</p>
+      </div>
+      <div class="racer-card" data-name="Tom Blaze" data-rating="4.5" data-car="Dodge Charger" data-birth="1989-03-30" data-bio="Tom Blaze is known for his fearless racing style and determination.">
+        <img src="https://randomuser.me/api/portraits/men/78.jpg" alt="Tom Blaze" />
+        <h3>Tom Blaze</h3>
+        <p>Rating: 4.5</p>
+        <p>Car: Dodge Charger</p>
+      </div>
+      <div class="racer-card" data-name="Sophie Racer" data-rating="4.4" data-car="BMW M3" data-birth="1993-11-19" data-bio="Sophie Racer combines precision and speed to dominate the tracks.">
+        <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Sophie Racer" />
+        <h3>Sophie Racer</h3>
+        <p>Rating: 4.4</p>
+        <p>Car: BMW M3</p>
+      </div>
+      <div class="racer-card" data-name="Jake Nitro" data-rating="4.3" data-car="Audi R8" data-birth="1990-01-25" data-bio="Jake Nitro is a crowd favorite with his aggressive racing tactics.">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Jake Nitro" />
+        <h3>Jake Nitro</h3>
+        <p>Rating: 4.3</p>
+        <p>Car: Audi R8</p>
+      </div>
+      <div class="racer-card" data-name="Emily Flash" data-rating="4.2" data-car="Mercedes AMG" data-birth="1994-06-14" data-bio="Emily Flash is known for her lightning-fast reflexes and control.">
+        <img src="https://randomuser.me/api/portraits/women/80.jpg" alt="Emily Flash" />
+        <h3>Emily Flash</h3>
+        <p>Rating: 4.2</p>
+        <p>Car: Mercedes AMG</p>
+      </div>
+      <div class="racer-card" data-name="Chris Speed" data-rating="4.1" data-car="Lexus RC" data-birth="1987-09-09" data-bio="Chris Speed is a veteran racer with years of experience.">
+        <img src="https://randomuser.me/api/portraits/men/90.jpg" alt="Chris Speed" />
+        <h3>Chris Speed</h3>
+        <p>Rating: 4.1</p>
+        <p>Car: Lexus RC</p>
+      </div>
+      <div class="racer-card" data-name="Nina Drift" data-rating="4.0" data-car="Subaru WRX" data-birth="1992-12-01" data-bio="Nina Drift is a skilled drifter with a passion for speed.">
+        <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="Nina Drift" />
+        <h3>Nina Drift</h3>
+        <p>Rating: 4.0</p>
+        <p>Car: Subaru WRX</p>
+      </div>
+      <div class="racer-card" data-name="David Racer" data-rating="3.9" data-car="Mazda RX-7" data-birth="1985-04-20" data-bio="David Racer is known for his smooth driving style and consistency.">
+        <img src="https://randomuser.me/api/portraits/men/95.jpg" alt="David Racer" />
+        <h3>David Racer</h3>
+        <p>Rating: 3.9</p>
+        <p>Car: Mazda RX-7</p>
+      </div>
+      <div class="racer-card" data-name="Olivia Speed" data-rating="3.8" data-car="Honda Civic" data-birth="1991-10-10" data-bio="Olivia Speed is a young racer with a bright future ahead.">
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Olivia Speed" />
+        <h3>Olivia Speed</h3>
+        <p>Rating: 3.8</p>
+        <p>Car: Honda Civic</p>
+      </div>
+    </div>
+
+    <div id="racer-detail-modal" class="modal hidden">
+      <div class="modal-content">
+        <button id="close-detail" class="close-button">&times;</button>
+        <img id="detail-pic" src="" alt="Racer Picture" />
+        <h2 id="detail-name"></h2>
+        <p><strong>Rating:</strong> <span id="detail-rating"></span></p>
+        <p><strong>Car:</strong> <span id="detail-car"></span></p>
+        <p><strong>Birth Date:</strong> <span id="detail-birth"></span></p>
+        <p id="detail-bio"></p>
+      </div>
+    </div>
+  </main>
+
+    <script>
+      const racerCards = document.querySelectorAll('.racer-card');
+      const detailModal = document.getElementById('racer-detail-modal');
+      const closeBtn = document.getElementById('close-detail');
+      const detailPic = document.getElementById('detail-pic');
+      const detailName = document.getElementById('detail-name');
+      const detailRating = document.getElementById('detail-rating');
+      const detailCar = document.getElementById('detail-car');
+      const detailBirth = document.getElementById('detail-birth');
+      const detailBio = document.getElementById('detail-bio');
+
+      // Remove old filter UI elements since filters are now in navbar dropdown
+      const filtersDiv = document.querySelector('.filters');
+      if (filtersDiv) {
+        filtersDiv.remove();
+      }
+
+      // Function to get query parameters from URL
+      function getQueryParams() {
+        const params = {};
+        window.location.search.substring(1).split("&").forEach(pair => {
+          if (pair) {
+            const [key, value] = pair.split("=");
+            params[decodeURIComponent(key)] = decodeURIComponent(value || "");
+          }
+        });
+        return params;
+      }
+
+      // Function to filter racers based on query params
+      function filterRacersByQuery() {
+        const params = getQueryParams();
+        const genderValue = params.gender || 'all';
+        const raceValue = params.race || 'all';
+
+        racerCards.forEach(card => {
+          const cardGender = card.dataset.gender;
+          const cardRace = card.dataset.race;
+
+          const genderMatch = genderValue === 'all' || cardGender === genderValue;
+          const raceMatch = raceValue === 'all' || cardRace === raceValue;
+
+          if (genderMatch && raceMatch) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      // Apply filter on page load based on URL query params
+      filterRacersByQuery();
+
+      racerCards.forEach(card => {
+        card.addEventListener('click', () => {
+          detailPic.src = card.querySelector('img').src;
+          detailName.textContent = card.dataset.name;
+          detailRating.textContent = card.dataset.rating;
+          detailCar.textContent = card.dataset.car;
+          detailBirth.textContent = card.dataset.birth;
+          detailBio.textContent = card.dataset.bio;
+          detailModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden'; // prevent background scroll
+        });
+      });
+
+      closeBtn.addEventListener('click', () => {
+        detailModal.classList.add('hidden');
+        document.body.style.overflow = 'auto'; // restore scroll
+      });
+
+      // Close modal when clicking outside content
+      window.addEventListener('click', (e) => {
+        if (e.target === detailModal) {
+          detailModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    </script>
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-branding">
+        <h2>Fast Car Racers</h2>
+        <p>Speed, Passion, and Performance</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="racers.html">Racers</a></li>
+          <li><a href="top-cars.html">Top Cars</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" class="social-icon facebook" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M22.675 0h-21.35C.6 0 0 .6 0 1.325v21.351C0 23.4.6 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.312h3.59l-.467 3.622h-3.123V24h6.116C23.4 24 24 23.4 24 22.675V1.325C24 .6 23.4 0 22.675 0z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="social-icon twitter" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.916 4.916 0 00-8.38 4.482A13.94 13.94 0 011.671 3.149a4.916 4.916 0 001.523 6.574 4.897 4.897 0 01-2.228-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.918 4.918 0 004.59 3.417A9.867 9.867 0 010 19.54a13.94 13.94 0 007.548 2.209c9.056 0 14.01-7.513 14.01-14.01 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram" class="social-icon instagram" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm4.75-.88a1.12 1.12 0 110 2.24 1.12 1.12 0 010-2.24z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-icon youtube" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path d="M23.498 6.186a2.998 2.998 0 00-2.11-2.11C19.67 3.5 12 3.5 12 3.5s-7.67 0-9.388.576a2.998 2.998 0 00-2.11 2.11C.5 7.904.5 12 .5 12s0 4.096.002 5.814a2.998 2.998 0 002.11 2.11C4.33 20.5 12 20.5 12 20.5s7.67 0 9.388-.576a2.998 2.998 0 002.11-2.11c.002-1.718.002-5.814.002-5.814s0-4.096-.002-5.814zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-contact">
+        <p>Contact us: <a href="mailto:info@fastcarracers.com">info@fastcarracers.com</a></p>
+        <p>&copy; Developed by Ewetse Ndala</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
